@@ -28,10 +28,14 @@ header{
     margin-right: 5%;
     margin-left: 2%;
 }
-#head-image{
-    
+.intro  img{
     width: 556px;
     height:438px ;
+    transition: transform 2s ease;
+}
+
+header:hover .intro img {
+    transform: rotate(360deg);
 }
 .button-design{
         background-color: #E02C6D;
@@ -168,3 +172,23 @@ header{
       margin-left: 550px;
       margin-top: 100px;
   }
+  /*Media part */
+@media screen and (max-width: 688px) {
+    .container {
+        width: 100%
+    }
+    .heading-item {
+        width: 100%;
+    }
+    .intro {
+        display: none;
+    }
+
+    h1.headline {
+        font-size: 30px;
+    }
+    .grid {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
